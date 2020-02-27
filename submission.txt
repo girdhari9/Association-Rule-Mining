@@ -1,0 +1,237 @@
+Roll number: 2018201019
+
+
+Technology used: Python
+
+Experiment 1. 
+
+WEKA/Python output as it is
+
+Frequent Itemsets
+Support = 0.020
+
+	support	itemsets
+0	0.105263	(adore)
+1	0.035088	(asking)
+2	0.035088	(body)
+3	0.035088	(broken)
+4	0.210526	(door)
+5	0.035088	(got)
+6	0.035088	(hear)
+7	1.000000	(knock)
+8	0.035088	(know)
+9	0.052632	(little)
+10	0.035088	(mikey)
+11	0.228070	(open)
+12	0.035088	(opened)
+13	0.035088	(please)
+14	0.035088	(questions)
+15	0.035088	(tell)
+16	0.035088	(time)
+17	0.105263	(adore, knock)
+18	0.087719	(adore, open)
+19	0.035088	(asking, knock)
+20	0.035088	(questions, asking)
+21	0.035088	(knock, body)
+22	0.035088	(broken, knock)
+23	0.210526	(door, knock)
+24	0.122807	(door, open)
+25	0.035088	(opened, door)
+26	0.035088	(door, please)
+27	0.035088	(got, knock)
+28	0.035088	(hear, knock)
+29	0.035088	(know, knock)
+30	0.052632	(little, knock)
+31	0.035088	(mikey, knock)
+32	0.228070	(open, knock)
+33	0.035088	(opened, knock)
+34	0.035088	(knock, please)
+35	0.035088	(questions, knock)
+36	0.035088	(tell, knock)
+37	0.035088	(time, knock)
+38	0.035088	(open, please)
+39	0.087719	(adore, open, knock)
+40	0.035088	(asking, questions, knock)
+41	0.122807	(door, open, knock)
+42	0.035088	(opened, door, knock)
+43	0.035088	(door, knock, please)
+44	0.035088	(door, open, please)
+45	0.035088	(open, knock, please)
+46	0.035088	(door, open, knock, please)
+
+Association Rules
+Confidence = 0.55
+
+	antecedents	consequents	confidence
+0	(adore)	(knock)	1.000000
+1	(adore)	(open)	0.833333
+2	(asking)	(knock)	1.000000
+3	(questions)	(asking)	1.000000
+4	(asking)	(questions)	1.000000
+5	(body)	(knock)	1.000000
+6	(broken)	(knock)	1.000000
+7	(door)	(knock)	1.000000
+8	(door)	(open)	0.583333
+9	(opened)	(door)	1.000000
+10	(please)	(door)	1.000000
+11	(got)	(knock)	1.000000
+12	(hear)	(knock)	1.000000
+13	(know)	(knock)	1.000000
+14	(little)	(knock)	1.000000
+15	(mikey)	(knock)	1.000000
+16	(open)	(knock)	1.000000
+17	(opened)	(knock)	1.000000
+18	(please)	(knock)	1.000000
+19	(questions)	(knock)	1.000000
+20	(tell)	(knock)	1.000000
+21	(time)	(knock)	1.000000
+22	(please)	(open)	1.000000
+23	(adore, open)	(knock)	1.000000
+24	(adore, knock)	(open)	0.833333
+25	(adore)	(open, knock)	0.833333
+26	(questions, asking)	(knock)	1.000000
+27	(asking, knock)	(questions)	1.000000
+28	(questions, knock)	(asking)	1.000000
+29	(asking)	(questions, knock)	1.000000
+30	(questions)	(asking, knock)	1.000000
+31	(door, open)	(knock)	1.000000
+32	(door, knock)	(open)	0.583333
+33	(door)	(open, knock)	0.583333
+34	(opened, door)	(knock)	1.000000
+35	(opened, knock)	(door)	1.000000
+36	(opened)	(door, knock)	1.000000
+37	(door, please)	(knock)	1.000000
+38	(knock, please)	(door)	1.000000
+39	(please)	(door, knock)	1.000000
+40	(door, please)	(open)	1.000000
+41	(open, please)	(door)	1.000000
+42	(please)	(door, open)	1.000000
+43	(open, please)	(knock)	1.000000
+44	(knock, please)	(open)	1.000000
+45	(please)	(open, knock)	1.000000
+46	(door, open, please)	(knock)	1.000000
+47	(door, knock, please)	(open)	1.000000
+48	(open, knock, please)	(door)	1.000000
+49	(door, please)	(open, knock)	1.000000
+50	(open, please)	(door, knock)	1.000000
+51	(knock, please)	(door, open)	1.000000
+52	(please)	(door, open, knock)	1.000000
+
+Conclusions: 1. Since these are knock-knock (door based) jokes, there is high support for knocking, please, door, opening, hearing and actions related to the door.
+2. Most of rules and support are provided with 'knock' since it occurs almost in all transactions.
+3. Interestingly, a side topic of asking questions over the knock, i.e. by the responder also has high support and association rules.
+4. Here, varying the confidence measure gave the same results uptil 50%
+
+
+
+Experiment 2:
+
+WEKA/Python output as it is.
+Frequent Itemsets
+Support = 0.020
+
+	support	itemsets
+0	0.105263	(adore)
+1	0.035088	(asking)
+2	0.035088	(body)
+3	0.035088	(broken)
+4	0.210526	(door)
+5	0.035088	(got)
+6	0.035088	(hear)
+7	0.035088	(knock)
+8	0.035088	(know)
+9	0.052632	(little)
+10	0.035088	(mikey)
+11	0.228070	(open)
+12	0.035088	(opened)
+13	0.035088	(please)
+14	0.035088	(questions)
+15	0.035088	(tell)
+16	0.035088	(time)
+17	0.087719	(adore, open)
+18	0.035088	(questions, asking)
+19	0.122807	(door, open)
+20	0.035088	(opened, door)
+21	0.035088	(door, please)
+22	0.035088	(open, please)
+23	0.035088	(door, open, please)
+
+Association Rules
+Confidence = 0.55
+
+	antecedents	consequents	confidence
+0	(adore)	(open)	0.833333
+1	(questions)	(asking)	1.000000
+2	(asking)	(questions)	1.000000
+3	(door)	(open)	0.583333
+4	(opened)	(door)	1.000000
+5	(please)	(door)	1.000000
+6	(please)	(open)	1.000000
+7	(door, please)	(open)	1.000000
+8	(open, please)	(door)	1.000000
+9	(please)	(door, open)	1.000000
+
+Conclusions: 
+1. Herein, the actions wrt to a door have higher support as in the previous case, but with the deletion of 'knock's at the begining of the transcation, we find that not only opening and asking questions at the door but also, broken doors, telling time, etc has become frequent.
+
+2. Keeping the same support as in the previous case, we get action words/verbs associated with the door as the association rules, with most of the words having a two-way relationship with a high confidence score. Thus, creating a semantic relation between words.
+
+3. Here, varying the confidence measure gave the same results uptil 50%
+
+
+
+Experiment 3.
+
+Your new transactions added.
+'Knock knock. Who's there? Nun. Nun who? Nun of the above.'
+'Knock knock. Who's there? Nun. Nun who? Nunthing.'
+'Knock knock. Who's there? Nun. Nun who? Nun other than nun.'
+'Knock knock. Who's there? Nun. Nun who? Nun.'
+
+WEKA/Python output as it is.
+
+Frequent Itemsets
+Support = 0.020
+
+	support	itemsets
+0	0.100559	(adore)
+1	0.033520	(asking)
+2	0.033520	(body)
+3	0.033520	(broken)
+4	0.201117	(door)
+5	0.033520	(got)
+6	0.033520	(hear)
+7	0.033520	(knock)
+8	0.033520	(know)
+9	0.050279	(little)
+10	0.033520	(mikey)
+11	0.061453	(nun)
+12	0.217877	(open)
+13	0.033520	(opened)
+14	0.033520	(please)
+15	0.033520	(questions)
+16	0.033520	(tell)
+17	0.033520	(time)
+18	0.083799	(adore, open)
+19	0.033520	(questions, asking)
+20	0.117318	(door, open)
+21	0.033520	(opened, door)
+22	0.033520	(door, please)
+23	0.033520	(open, please)
+24	0.033520	(door, open, please)
+
+Association Rules
+Confidence = 0.55
+
+
+	antecedents	consequents	confidence
+0	(adore)	(open)	0.833333
+1	(questions)	(asking)	1.000000
+2	(asking)	(questions)	1.000000
+3	(door)	(open)	0.583333
+4	(opened)	(door)	1.000000
+5	(please)	(door)	1.000000
+6	(please)	(open)	1.000000
+7	(door, please)	(open)	1.000000
+8	(open, please)	(door)	1.000000
+9	(please)	(door, open)	1.000000
